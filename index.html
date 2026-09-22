@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Currency Converter</h1>
+        <p id="lastUpdate">Loading...</p>
+        <button id="refreshBtn">Refresh</button>
+    </header>
+
+    <main>
+        <section class="converter">
+            <h2>Convert</h2>
+            <div class="converter-row">
+                <input type="number" id="amountInput" value="1" min="0" step="any">
+                <select id="fromSelect"></select>
+                <span class="arrow">-></span>
+                <select id="toSelect"></select>
+            </div>
+            <button id="convertBtn">Convert</button>
+            <p id="convertResult" class="result"></p>
+        </section>
+
+        <section class="rates">
+            <h2>Exchange Rates (base: USD)</h2>
+            <table id="ratesTable">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Rate</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f4f6f8;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+h1 {
+    margin-bottom: 4px;
+}
+
+#lastUpdate {
+    color: #666;
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: #2f6fed;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #1d54c4;
+}
+
+section {
+    background: white;
+    padding: 16px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.converter-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.converter-row input {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.converter-row select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.arrow {
+    font-weight: bold;
+}
+
+.result {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1d7d34;
+    margin-top: 10px;
+    min-height: 24px;
+}
+
+.result.error {
+    color: #c0392b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 6px 8px;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    color: #555;
+}
